@@ -1,3 +1,4 @@
+// function to response user requests by callbacks
 function requestHandler(req, res) {
 	User.findById(req.userId, function (error, user) {
 		if (error) {
